@@ -47,6 +47,7 @@ class SQLProcessor extends SQLChunkProcessor {
      * Some sections are then further handled by specialized processors.
      */
     public function process($tokens) {
+        print_r($tokens);
         $prev_category = "";
         $token_category = "";
         $skip_next = 0;
